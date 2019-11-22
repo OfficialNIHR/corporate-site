@@ -1,0 +1,253 @@
+@import url("/layout/css/nihr.css");
+
+.coral-band {
+    width: 100%;
+    height: 6rem;
+    background-color: #EC7C72;
+}
+
+.badge {
+    margin: 0 auto;
+    height: auto;
+    width: 53%;
+    background-color: #6FBAC0;
+    border-radius: 30px;
+    position: relative;
+    top: -10rem;
+    padding: 2rem;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ea9b0+0,6fbac0+50,9bcbd0+78,c1dde0+100 */
+    background: #2ea9b0;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #2ea9b0 0%, #6fbac0 50%, #9bcbd0 78%, #c1dde0 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #2ea9b0 0%, #6fbac0 50%, #9bcbd0 78%, #c1dde0 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #2ea9b0 0%, #6fbac0 50%, #9bcbd0 78%, #c1dde0 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ea9b0', endColorstr='#c1dde0', GradientType=0);
+    /* IE6-9 */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    border: 1px solid #C1DDE0;
+}
+
+.badge-text {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.badge-text h2 {
+    letter-spacing: 8px;
+}
+
+.badge h2,
+.badge span {
+    color: white;
+    font-size: 6rem;
+}
+
+.badge p a {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.heading-padding {
+    height: 15rem;
+}
+
+.hashtag {
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.path-color {
+    text-decoration: underline;
+    text-decoration-color: #EA5D4E;
+    text-decoration-style: dashed;
+    color: #193E72;
+}
+
+/* =================================================================
+   Progress
+   ================================================================= */
+.progress {
+    padding-top: 18em;
+}
+
+.progress .autumn-progress-header {
+    width: auto;
+    display: inline-block;
+    z-index: 20;
+    font-size: 1.3em;
+    /*text-align: left;
+  padding: 0.6em 1.5em 0.6em 0;
+  font-weight: 400;
+  background: #21abb0;
+  border-left: none;
+  border-top-right-radius: 135px;
+  border-bottom-right-radius: 135px;*/
+}
+
+.progress .autumn-progress-header h2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.autumn-progress-header img {
+    border-radius: 50%;
+    border: 5px solid #EA5D4E;
+    width: 185px;
+}
+
+.content.progress {
+    margin: 0;
+}
+
+.progress .col-4 img {
+    width: 22%;
+}
+
+.progress h2 {
+    font-size: 1em;
+}
+
+.progress .row {
+    margin: 0;
+    padding: 0 !important;
+}
+
+.progress>div {
+    margin: 0 !important;
+}
+
+.progress .row [class^="col"] {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.progress .row>div p,
+.progress .row>div h3 {
+    margin: 1em 2em;
+}
+
+.progress .row>div h3 {
+    padding-left: 0 !important;
+}
+
+@media only screen and (min-width: 45em) {
+
+    /* 720px */
+    .progress .col-5 {
+        width: 41.66%;
+    }
+
+    .progress .col-7 {
+        width: 58.33%;
+    }
+
+    .progress {
+        padding-top: 18em !important;
+        background: url('../img/style4-repeat.png') top left repeat-y;
+    }
+
+    .progress .autumn-progress-header {
+        width: 65%;
+        padding: 1em 1.5em 1em 2.3em;
+    }
+
+    .progress .col-7 p:first-child {
+        margin-top: 0 !important;
+    }
+
+    .progress .col-7 p:last-child {
+        margin-bottom: 3em !important;
+    }
+
+    /* .progress .progress-header.progress1 {
+  background: url('../img/lightbulb.png') top left no-repeat #21abb0;
+  background-size: contain;
+  }
+  .progress .progress-header.progress2 {
+    background: url('../img/directions.png') top left no-repeat #21abb0;
+    background-size: contain;
+  }
+  .progress .progress-header.progress3 {
+    background: url('../img/apply.png') top left no-repeat #21abb0;
+    background-size: contain;
+  }
+  .progress .progress-header.progress4 {
+    background: url('../img/handshake.png') top left no-repeat #21abb0;
+    background-size: contain;
+  }*/
+}
+
+.landing-outer {
+    display: flex;
+}
+
+.landing-inner {
+    width: 40%;
+    align-self: flex-start;
+    border: 1px solid black;
+    height: 10rem;
+}
+
+.col-9 ul {
+    padding-left: 6rem;
+    padding-right: 3rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 75em) {
+    .badge {
+        width: 75%;
+        z-index: 99;
+    }
+
+    .badge-text h2,
+    .badge-text span {
+        font-size: 5rem;
+    }
+
+    .badge p a {
+        font-size: 2rem;
+    }
+
+    .col-9 {
+        padding-left: 3rem;
+    }
+
+    .container .progress {
+        padding-top: 12rem !important;
+    }
+}
+
+@media only screen and (max-width: 45em) {
+    .badge {
+        width: 50%;
+        top: -5rem;
+    }
+
+    .badge-text h2,
+    .badge-text span {
+        font-size: 2rem;
+    }
+
+    .badge p a {
+        font-size: 1rem;
+    }
+
+    .container .progress {
+        padding-top: 6rem !important;
+    }
+
+    .autumn-progress-header img {
+        margin-left: 6rem;
+    }
+
+    .btn {
+        font-size: 1rem !important;
+    }
+}

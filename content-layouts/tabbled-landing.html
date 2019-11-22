@@ -1,0 +1,207 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<div class="container style2">
+
+    <div class="row content-header">
+
+
+        :::block-search-box:::
+
+        <div class="row section-header">
+            <div class="col-12 mb1">
+                <div>
+                    <h1>:::title:::</h1>
+                    <ul class="breadcrumb">
+                        <BREADCRUMB>
+                            <CLASSNAME>breadcrumb sknoindex</CLASSNAME>
+                            <DELIMITER>></DELIMITER>
+                            <NAVDEPTH>6</NAVDEPTH>
+                        </BREADCRUMB>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row content">
+        <div class="tabset" data-aos="fade-up">
+            <!-- Tab 1 -->
+            <sitekit:if op1=":::thispageinfo.bodylength1:::" operator="!=" op2="0">
+                <input type="radio" name="tabset" id="tab1" aria-controls="tab-one" checked>
+                <ADMINCOMMENT>
+                    <h3 class="admin-comment">Developer note: The text block below is for the first tab text</h3>
+                </ADMINCOMMENT>
+                <label for="tab1" class="btn">
+                    <COMMENT>TEXT1</COMMENT>
+                </label>
+            </sitekit:if>
+            <!-- Tab 2 -->
+            <sitekit:if op1=":::thispageinfo.bodylength7:::" operator="!=" op2="0">
+                <input type="radio" name="tabset" id="tab2" aria-controls="tab-two">
+                <ADMINCOMMENT>
+                    <h3 class="admin-comment">Developer note: The text block below is for the second tab text</h3>
+                </ADMINCOMMENT>
+                <label for="tab2" class="btn">
+                    <COMMENT>TEXT7</COMMENT>
+                </label>
+            </sitekit:if>
+            <!-- Tab 3 -->
+            <sitekit:if op1=":::thispageinfo.bodylength13:::" operator="!=" op2="0">
+                <input type="radio" name="tabset" id="tab3" aria-controls="tab-three">
+                <ADMINCOMMENT>
+                    <h3 class="admin-comment">Developer note: The text block below is for the third tab text</h3>
+                </ADMINCOMMENT>
+                <label for="tab3" class="btn">
+                    <COMMENT>TEXT13</COMMENT>
+                </label>
+            </sitekit:if>
+
+            <div class="tab-panels" data-aos="fade-up">
+
+                <!-- first panel -->
+
+                <section id="tab-one" class="tab-panel">
+                    <div class="row banner banner-flip subpage-intro">
+                        <COMMENT>PIC1</COMMENT>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-10 latest-block no-margin">
+                            <div class="col-6 motif-block">
+                                <div class="col-6">
+                                    <h3>Quick Links</h3>
+                                    <COMMENT>BODY5</COMMENT>
+                                </div>
+                            </div>
+                            <div class="col-7 news-items">
+                                <ul>
+                                    :::dataisland-casestudy-nihr-one-industry:::
+                                    :::dataisland-blog-nihr-one-inidustry:::
+                                    :::dataisland-funding-nihr-one-industry:::
+                                    :::dataisland-events-nihr-one-industry:::
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <sitekit:if op1=":::thispageinfo.bodylength6:::" operator="!=" op2="0">
+                        <div class="row content">
+                            <div class="col-12">
+                                <div class="tabbed-text" data-aos="fade-up">
+                                    <COMMENT>BODY6</COMMENT>
+                                </div>
+                            </div>
+                        </div>
+                    </sitekit:if>
+                </section>
+
+                <!-- second panel -->
+
+                <section id="tab-two" class="tab-panel">
+                    <div class="row banner banner-flip subpage-intro">
+                        <COMMENT>PIC2</COMMENT>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-10 latest-block no-margin">
+                            <div class="col-6 motif-block">
+                                <div class="col-6">
+                                    <h3>Quick Links</h3>
+                                    <COMMENT>BODY11</COMMENT>
+                                </div>
+                            </div>
+                            <div class="col-7 news-items">
+                                <ul>
+                                    :::dataisland-news-nihr-one-charities:::
+                                    :::dataisland-casestudy-nihr-one-charities:::
+                                    :::dataisland-blog-nihr-one-charities:::
+                                    :::dataisland-funding-nihr-one-charities:::
+                                    :::dataisland-events-nihr-one-charities:::
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <sitekit:if op1=":::thispageinfo.bodylength12:::" operator="!=" op2="0">
+                        <div class="row content">
+                            <div class="col-12">
+                                <div class="tabbed-text" data-aos="fade-up">
+                                    <COMMENT>BODY12</COMMENT>
+                                </div>
+                            </div>
+                        </div>
+                    </sitekit:if>
+                </section>
+
+                <!-- third panel -->
+
+                <section id="tab-three" class="tab-panel">
+                    <div class="row banner banner-flip subpage-intro">
+                        <COMMENT>PIC3</COMMENT>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-10 latest-block no-margin">
+                            <div class="col-6 motif-block">
+                                <div class="col-6">
+                                    <h3>Quick Links</h3>
+                                    <COMMENT>BODY17</COMMENT>
+                                </div>
+                            </div>
+                            <div class="col-7 news-items">
+                                <ul>
+                                    :::dataisland-news-nihr-one-other:::
+                                    :::dataisland-casestudy-nihr-one-other:::
+                                    :::dataisland-blog-nihr-one-other:::
+                                    :::dataisland-funding-nihr-one-other:::
+                                    :::dataisland-events-nihr-one-other:::
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <sitekit:if op1=":::thispageinfo.bodylength18:::" operator="!=" op2="0">
+                        <div class="row content">
+                            <div class="col-12">
+                                <div class="tabbed-text" data-aos="fade-up">
+                                    <COMMENT>BODY18</COMMENT>
+                                </div>
+                            </div>
+                        </div>
+                    </sitekit:if>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <ADMINCOMMENT>
+        <h3>Developer note: The text block below is full-width, designed for wide content and for inserting dynamic code
+            blocks.</h3>
+    </ADMINCOMMENT>
+    <div class="row" data-aos="fade-up">
+        <COMMENT>BODY19</COMMENT>
+    </div>
+
+    <ADMINCOMMENT>
+        <h3>Developer note: Please don't use the blocks below. They were for the hero image overlay box, which is in the
+            process of being removed.</h3>
+    </ADMINCOMMENT>
+
+    <COMMENT>TEXT2</COMMENT>
+    <COMMENT>TEXT3</COMMENT>
+    <COMMENT>TEXT4</COMMENT>
+    <COMMENT>TEXT8</COMMENT>
+    <COMMENT>TEXT9</COMMENT>
+    <COMMENT>TEXT10</COMMENT>
+    <COMMENT>TEXT14</COMMENT>
+    <COMMENT>TEXT15</COMMENT>
+    <COMMENT>TEXT16</COMMENT>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/layout/js/div-height.js"></script>
+
+    :::block-about-us:::
+</div>

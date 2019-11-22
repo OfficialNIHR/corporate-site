@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("/layout/css/main.css?v=1.0");
+@import url("/layout/css/icons.css?v=1.0");
+@import url("/layout/css/posts.css?v=1.0");
+@import url("/layout/css/showcase.css?v=1.0");
+@import url("/layout/css/accordion.css?v=1.0");
+
+h1 {
+    color: black !important;
+}
+
+/* Full Colour */
+
+.motif-block {
+    background-color: #46A86C !important;
+}
+
+.grid-title,
+.readmore-text {
+    background: #46A86C !important;
+}
+
+/* 60% Colour */
+
+.content-header,
+.latest-block,
+.rounded-header,
+.accordion-body-tab,
+.internalLink:hover+.internalSummary,
+tr:first-child {
+    background-color: #A1CAA6 !important;
+}
+
+/* 20% Colour */
+
+blockquote:before {
+    color: #E2EEE3 !important;
+}
+
+/* Black */
+
+h1,
+.breadcrumb,
+.breadcrumb a,
+.rounded-header,
+.icon i,
+.row .rounded-header a,
+.motif-block h3,
+.motif-block h3:before,
+.motif-block li a,
+.latest-block i,
+.latest-block li a,
+.footer h5,
+.progress-header h2,
+.accordion-body-tab h2,
+.readmore-text a,
+.inline-fix,
+.news-block span:before,
+.internalLink:hover+.internalSummary,
+tr:first-child {
+    color: black !important;
+}
+
+/* White */
+
+h2.large-text {
+    color: white !important;
+}
+
+/* Grey */
+
+.rounded-header-future {
+    background: #ACBCC3 !important;
+}
+
+/* NIHR Blue */
+
+.intro-block h2,
+.intro-block h3,
+.intro-block h4 {
+    color: #193E72 !important;
+}
+
+@media only screen and (min-width: 45em) {
+    /* 720px */
+
+    .content-header {
+        background: url("/layout/img/motifs/industry/industry-header.png") bottom right no-repeat #46A86C !important;
+        background-size: contain !important;
+        min-height: 13.5em !important;
+    }
+
+    .motif-block:before {
+        background: url("/layout/img/motifs/industry/industry-landing.png") no-repeat !important;
+        background-position: top left !important;
+        background-size: contain !important;
+    }
+}

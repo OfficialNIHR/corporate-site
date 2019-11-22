@@ -1,0 +1,114 @@
+.col-4.news-block.news-block-style1 {
+    padding-left: 0;
+}
+
+.showcase-heading {
+    padding-left: 0 !important;
+    margin-bottom: 1rem;
+}
+
+.news-block-style1 {
+    background: #b2d9db !important;
+}
+
+/*.dynamic-block, .tabbed, .showcase-intro, .showcase-feature-hero {
+  margin-left: 2%;
+  margin-right: 2%;
+}*/
+
+.showcase-intro {
+    font-size: 1.1rem;
+}
+
+.banner {
+    width: auto !important;
+}
+
+.dynamic-block-item a {
+    font-size: 1.1rem;
+}
+
+.showcase-feature-text p {
+    font-size: 1.1rem !important;
+    line-height: 1.2rem !important;
+}
+
+.globe:before {
+    content: "\f7a2";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.2em;
+    margin: 0 0.25em 0 0;
+}
+
+.showcase-hero {
+    margin-top: 3rem;
+}
+
+/*Overrides for colouring - remove once conditional css in place */
+
+.dynamic-block {
+    border: 2px solid #193E72 !important;
+}
+
+.motif-block:before {
+    content: '';
+    display: inline-block;
+    width: 260px;
+    height: 370px;
+    background: url("/layout/img/frontpage-bigmotif.png") no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    position: absolute;
+    top: -160px;
+    left: 0;
+}
+
+@media only screen and (min-width: 64em) {
+    .motif-block:before {
+        display: none;
+    }
+}
+
+h1 {
+    color: white;
+}
+
+/* Admin comment */
+
+h3.admin-comment {
+    color: #EA5D4E;
+}
+
+#SKEditableImage {
+    width: 10rem !important;
+    max-height: 10rem !important;
+}
+
+/* Misc */
+
+.showcase-heading .news-block p {
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-left: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: white;
+}
+
+.showcase-heading .img-hover-zoom {
+    padding-left: 0;
+}
+
+.showcase-tab-box p img,
+.showcase-tab p iframe {
+    display: inline-block;
+    float: left;
+    padding-right: 2rem;
+}
+
+.video-centre iframe {
+    display: block;
+    margin: 0 auto;
+    float: inherit;
+}

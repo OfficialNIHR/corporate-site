@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("/layout/css/main.css");
+@import url("/layout/css/icons.css");
+@import url("/layout/css/posts.css");
+@import url("/layout/css/alphabetical-posts.css");
+
+form:nth-child(2) {
+    display: none;
+}
+
+.row.content {
+    margin-top: 0;
+}

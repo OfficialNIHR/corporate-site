@@ -1,0 +1,162 @@
+@import url("/layout/css/main.css");
+@import url("/layout/css/accordion.css?v=1.0");
+
+h3.btn {
+    min-width: 25%;
+    margin-top: 0;
+    float: left;
+}
+
+.col-8 .result-row .search-heading {
+    padding-left: 0;
+}
+
+label.accordion-body-tab {
+    padding-right: 0 !important;
+    margin-bottom: 2rem;
+}
+
+/* End accordio - Start accoridion formatting */
+
+.tab {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.federated-search {
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.federated-search a {
+    margin-bottom: 2rem;
+}
+
+/* Start Search */
+
+#search-results .rounded-header {
+    margin-bottom: 20px;
+}
+
+.result-row {
+    margin-bottom: 1rem;
+}
+
+.result-row .result_title {
+    font-size: 18px;
+}
+
+.result-row .result_title a {
+    color: #1a0dab;
+}
+
+.result-row .result-url a {
+    color: #006621;
+    font-style: normal;
+    font-size: 14px;
+    padding-top: 1px;
+}
+
+.result-row .result-snippet {
+    line-height: 1.1;
+    margin-top: 4px;
+    word-wrap: break-word;
+    color: #545454;
+    font-size: small;
+    font-family: arial, sans-serif;
+}
+
+.result-row .result-snippet em {
+    font-weight: bold;
+    font-style: normal;
+    font-size: small;
+    color: #ea5d4e;
+}
+
+span.link-type-icon {
+    margin-left: 4px;
+    color: #ee7d71;
+}
+
+.result-snippet {
+    margin-top: 0.5rem;
+}
+
+/* =================================================================
+	Search Results Pagination
+   ================================================================= */
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #193E72;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* =================================================================
+	Filter Section.
+   ================================================================= */
+
+
+#filter-container .filter-list {
+    border: none;
+    list-style-type: none;
+}
+
+#filter-container .filter-label {
+    position: relative;
+    top: -2px;
+    margin-left: 4px;
+}
+
+/* =================================================================
+	Federated Search link.
+   ================================================================= */
+
+.federated {
+    margin-top: 1rem;
+}
+
+/* =================================================================
+	Showcase Styling
+   ================================================================= */
+
+.result-row {
+    padding-left: 1rem;
+}
+
+.result-row.showcase {
+    border: 2px solid #EA5D4E;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.showcase {
+    position: relative;
+}
+
+.showcase:after {
+    content: "Explore NIHR";
+    color: #EA5D4E;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.25rem;
+}

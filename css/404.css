@@ -1,0 +1,15 @@
+@import url("/layout/css/main.css");
+
+.animation {
+  margin-top: 4rem;
+}
+
+.animation-video {
+  width: 75%;
+  height: 75%;
+}
+
+h3 a {
+  font-size: 1.4rem;
+  color: #193E72 !important;
+}

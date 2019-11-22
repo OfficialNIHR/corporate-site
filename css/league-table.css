@@ -1,0 +1,64 @@
+.detailTable {
+    width: 90%;
+}
+
+th.league {
+    background-color: #193E72;
+}
+
+th.patients {
+    background-color: #F29330;
+    color: black;
+}
+
+th.patients:last-child {
+    border-right: 1px solid #F29330;
+}
+
+th.studies {
+    background-color: #46A86C;
+    color: black;
+}
+
+.row [class^="col"] {
+    float: none !important;
+}
+
+.ocsTable tr:first-child {
+    color: black !important;
+}
+
+.detailTable tr:first-child {
+    background: #D0D0E0 !important;
+    color: black;
+}
+
+
+.detailTable th {
+    font-size: 1.0em;
+}
+
+.detailTable td {
+    text-align: center;
+}
+
+.col1 {
+    width: 15%;
+}
+
+.colA {
+    width: 15%;
+    font-weight: bold;
+}
+
+.column1 {
+    width: 25%;
+}
+
+.researchStudies {
+    padding: 20px 0px 10px 0px;
+}
+
+.patientStudies {
+    padding: 10px 0px 20px 0px;
+}

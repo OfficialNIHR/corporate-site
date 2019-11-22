@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("/layout/css/main.css");
+
+/* Initial styles for screen. Print styles follow at bottom of file  */
+
+@media screen {
+
+    body {
+        padding: 20px;
+        font-family: Lato;
+    }
+
+    article {
+        max-width: 75em;
+        background: white;
+        padding: 2em;
+        margin: 1em auto;
+    }
+
+    /* Larger headings overwriting main.css for easier document reading  */
+
+    h1 {
+        font-size: 3em;
+        margin-top: 0.3em;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.75em;
+    }
+
+    h3 {
+        margin-top: 0.4em;
+    }
+
+    /* Removing list style and replicating with a counter, so that list items can be styled until ::marker is supported  */
+
+    ol {
+        padding-inline-start: 0;
+        list-style: none;
+        counter-reset: html-document-contents-counter;
+    }
+
+    li {
+        counter-increment: html-document-contents-counter;
+    }
+
+    li::before {
+        content: counter(html-document-contents-counter);
+        padding-right: 1.5em;
+        display: table-cell;
+        min-width: 1.5em;
+    }
+
+    /* Table cell so text lines up when list is narrow  */
+
+    li span {
+        display: table-cell;
+    }
+
+    /* Styling for summary box  */
+
+    .html-document-header {
+        padding: 1.5em;
+        display: inline-block;
+        max-width: 75em;
+    }
+
+    /* div containing document itself - padding on bottom ensures progress bar finishes even if final text box is very short  */
+
+    .html-document-body-contents {
+        float: left;
+        width: 70%;
+        padding-bottom: 8em;
+    }
+
+    /* repeating div containing title and text blocks  */
+
+    .html-document-title-and-text {
+        margin-bottom: 3em;
+    }
+
+    /* Tags  */
+
+    .document-tags {
+        display: inline-block;
+        border: 2px solid white;
+        border-radius: 25px;
+        padding: 0.5em;
+        font-weight: bold;
+        margin: 1em 1em 0 0;
+        cursor: pointer;
+    }
+
+    .document-tags a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Padding for text - can't be in ems  */
+
+    .html-document-title-and-text h2,
+    .html-document-title-and-text p {
+        padding: 20px;
+    }
+
+    /* Styling for contents list - inserted with html-document.js  */
+
+    .table-of-contents {
+        float: left;
+        z-index: 1;
+        font-size: 0.8em;
+        max-height: calc(100% - 50px);
+        width: 25%;
+        margin-left: 1.5em;
+        overflow-y: auto;
+    }
+
+    .table-of-contents ol {
+        padding: 0.5em 1.5em 1.5em 0em;
+    }
+
+    .table-of-contents li {
+        margin-bottom: 1em;
+    }
+
+    .table-of-contents a {
+        font-size: 1.3em;
+    }
+
+    .table-of-contents a:hover,
+    .table-of-contents a:active {
+        text-decoration: underline;
+    }
+
+    /* Highlight H3 onclick when link in contents clicked  */
+
+    h3:target {
+        animation: highlight 1s ease;
+    }
+
+    @keyframes highlight {
+        from {
+            background: #0d3d75;
+        }
+
+        to {
+            background: white;
+        }
+    }
+
+    /* Back to contents button  */
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        border: none;
+        outline: none;
+        color: #333333;
+        cursor: pointer;
+        background-color: #ffffff;
+        padding-left: 0px;
+    }
+
+    [class^=arr-] {
+        border: solid currentColor;
+        border-width: 0 .5em .5em 0;
+        display: inline-block;
+        padding: .50em;
+    }
+
+    .arr-up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+
+    span.back-label {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 1.1em;
+        text-decoration: underline;
+    }
+
+}
+
+/* Style for print  */
+
+@media print {
+    * {
+        font-family: Lato;
+    }
+
+    .html-document-header,
+    .html-document-header a {
+        color: black;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .super-text {
+        font-size: 1em;
+    }
+}

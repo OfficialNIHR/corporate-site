@@ -1,0 +1,377 @@
+@supports (display: grid) {
+
+    .grid {
+        display: grid;
+        grid-gap: 1.5vw;
+        min-height: 100vh;
+        padding: 1.5vw 0;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 50vh 30vh repeat(12, minmax(20vh, 1fr));
+        grid-template-areas:
+            "hero   hero"
+            "big1   big1"
+            "med1   med1"
+            "med2   med2"
+            "small1 small1"
+            "small2 small2"
+            "small3 small3"
+            "small4 small4"
+            "small5 small5"
+            "small6 small6"
+            "small7 small7"
+            "small8 small8"
+            "small9 small9"
+            "small10 small10";
+    }
+
+    @media screen and (min-width: 750px) {
+        .grid {
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 25vh);
+            grid-template-areas:
+                "hero   hero   hero   med1   med1"
+                "hero   hero   hero   med2   med2"
+                "big1   big1   big1   big1   big1"
+                "small1 small2 small3 small4 small5"
+                "small6 small7 small8 small9 small10";
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        .grid {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                "small1 hero hero hero med1 med1"
+                "small1 hero hero hero med1 med1"
+                "small2 small3 big1 big1 small4 small5"
+                "small2 small3 big1 big1 small4 small5"
+                "small6 med2 med2 small7 small8 small9"
+                "small6 med2 med2 small7 small8 small9";
+        }
+    }
+
+    .grid .item:nth-child(1) {
+        grid-area: hero;
+    }
+
+    .grid .item:nth-child(2) {
+        grid-area: big1;
+    }
+
+    .grid .item:nth-child(3) {
+        grid-area: med1;
+    }
+
+    .grid .item:nth-child(4) {
+        grid-area: med2;
+    }
+
+    .grid .item:nth-child(5) {
+        grid-area: small1;
+    }
+
+    .grid .item:nth-child(6) {
+        grid-area: small2;
+    }
+
+    .grid .item:nth-child(7) {
+        grid-area: small3;
+    }
+
+    .grid .item:nth-child(8) {
+        grid-area: small4;
+    }
+
+    .grid .item:nth-child(9) {
+        grid-area: small5;
+    }
+
+    .grid .item:nth-child(10) {
+        grid-area: small6;
+    }
+
+    .grid .item:nth-child(11) {
+        grid-area: small7;
+    }
+
+    .grid .item:nth-child(12) {
+        grid-area: small8;
+    }
+
+    .grid .item:nth-child(13) {
+        grid-area: small9;
+    }
+
+}
+
+.box {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+}
+
+/* flexbox fallback is the browser does not support display:grid */
+@supports not (display: grid) {
+
+    .grid {
+        display: flex;
+        flex-flow: row wrap;
+        min-height: 100vh;
+        padding: 0.75vw;
+    }
+
+    .grid .item {
+        min-height: 20vh;
+        margin: 0.75vw;
+    }
+
+    .grid .item:nth-child(1) {
+        flex: 0 1 calc(100% - 1.5vw);
+        height: 50vh;
+    }
+
+    .grid .item:nth-child(2) {
+        flex: 0 1 calc(100% - 1.5vw);
+        height: 30vh;
+    }
+
+    .grid .item:nth-child(3) {
+        flex: 0 1 calc(100% - 1.5vw);
+    }
+
+    .grid .item:nth-child(4) {
+        flex: 0 1 calc(100% - 1.5vw);
+    }
+
+    .grid .item:nth-child(5) {
+        flex: 0 1 calc(50% - 1.5vw);
+    }
+
+    .grid .item:nth-child(6) {
+        flex: 0 1 calc(50% - 1.5vw);
+    }
+
+    .grid .item:nth-child(7) {
+        flex: 0 1 calc(50% - 1.5vw);
+    }
+
+    .grid .item:nth-child(8) {
+        flex: 0 1 calc(50% - 1.5vw);
+    }
+
+    .grid .item:nth-child(9) {
+        flex: 0 1 calc(50% - 1.5vw);
+    }
+
+    .grid .item:nth-child(10) {
+        flex: 0 1 calc(50% - 1.5vw);
+    }
+
+    .grid .item:nth-child(11) {
+        flex: 0 1 calc(50% - 1.5vw);
+    }
+
+    .grid .item:nth-child(12) {
+        flex: 0 1 calc(50% - 1.5vw);
+    }
+
+    .grid .item:nth-child(13) {
+        flex: 0 1 calc(50% - 1.5vw);
+    }
+
+    .grid .item:nth-child(14) {
+        flex: 0 1 calc(50% - 1.5vw);
+    }
+
+    @media screen and (min-width: 750px) {
+        .grid .item:nth-child(1) {
+            flex: 0 1 calc(60% - 1.5vw);
+        }
+
+        .grid .item:nth-child(2) {
+            flex: 0 1 calc(40% - 1.5vw);
+            height: 50vh;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        .grid .item:nth-child(1) {
+            flex: 0 1 calc(60% - 1.5vw);
+        }
+
+        .grid .item:nth-child(2) {
+            flex: 0 1 calc(40% - 1.5vw);
+        }
+
+        .grid .item:nth-child(3) {
+            flex: 0 1 calc(50% - 1.5vw);
+        }
+
+        .grid .item:nth-child(4) {
+            flex: 0 1 calc(50% - 1.5vw);
+        }
+
+        .grid .item:nth-child(5) {
+            flex: 0 1 calc(25% - 1.5vw);
+        }
+
+        .grid .item:nth-child(6) {
+            flex: 0 1 calc(25% - 1.5vw);
+        }
+
+        .grid .item:nth-child(7) {
+            flex: 0 1 calc(25% - 1.5vw);
+        }
+
+        .grid .item:nth-child(8) {
+            flex: 0 1 calc(25% - 1.5vw);
+        }
+
+        .grid .item:nth-child(9) {
+            flex: 0 1 calc(25% - 1.5vw);
+        }
+
+        .grid .item:nth-child(10) {
+            flex: 0 1 calc(25% - 1.5vw);
+        }
+
+        .grid .item:nth-child(11) {
+            flex: 0 1 calc(25% - 1.5vw);
+        }
+
+        .grid .item:nth-child(12) {
+            flex: 0 1 calc(25% - 1.5vw);
+        }
+
+        .grid .item:nth-child(13) {
+            flex: 0 1 calc(25% - 1.5vw);
+        }
+
+        .grid .item:nth-child(14) {
+            flex: 0 1 calc(25% - 1.5vw);
+        }
+    }
+
+}
+
+/* Styles, just for fun */
+
+/* *,*:before,*:after {
+  box-sizing: border-box;
+} */
+
+@supports not (display: grid) {
+    body:before {
+        content: 'Sorry, seems like your browser doesn\'t support display: grid. Below is the flexbox fallback.';
+        display: block;
+        padding: 2rem 2rem 0;
+        text-align: center;
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.grid .item {
+    position: relative;
+    /*padding: 1vw;*/
+    background-position: left bottom;
+    background-size: 150% 100%;
+    transition: background 500ms, outline 500ms;
+    background-position: top left;
+    outline: transparent;
+}
+
+.grid .item:hover,
+.grid .item:focus {
+    background-position: top right;
+}
+
+.grid .item:focus {
+    outline: 2px solid #3eabfa;
+}
+
+/* Styling for the Titles */
+
+h3 {
+    margin: 0;
+}
+
+.grid-title {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    background: #193E72;
+    width: 100%;
+}
+
+/*IE11 Specific Fallback*/
+
+@media all and (-ms-high-contrast:none) {
+
+    *::-ms-backdrop,
+    .grid-title {
+        left: 0;
+    }
+
+    *::-ms-backdrop,
+    .box {
+        height: 20rem;
+        margin-top: 2rem;
+    }
+}
+
+
+/*Overrides for colouring - remove once conditional css in place */
+
+
+.dynamic-block {
+    border: 2px solid #193E72 !important;
+}
+
+.readmore-text {
+    background-color: #193E72 !important;
+}
+
+.inline-fix {
+    color: white;
+}
+
+.motif-block:before {
+    content: '';
+    display: inline-block;
+    width: 260px;
+    height: 370px;
+    background: url("/layout/img/frontpage-bigmotif.png") no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    position: absolute;
+    top: -160px;
+    left: 0;
+}
+
+/* Admin comment */
+
+h3.admin-comment {
+    color: #EA5D4E;
+}
+
+#SKEditableImage {
+    width: 10rem !important;
+    max-height: 10rem !important;
+}
+
+/* Case study */
+
+.case-study-hero {
+    margin-top: 0;
+}

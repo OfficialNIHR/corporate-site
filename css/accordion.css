@@ -1,0 +1,111 @@
+.half {
+    float: left;
+    width: 50%;
+    padding: 0 1em;
+}
+
+h2 {
+    margin-block-end: 0;
+    margin-top: 0;
+}
+
+/* Accordeon styles */
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+}
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tab label {
+    position: relative;
+    display: block;
+    padding: 1rem 3rem 1rem 1rem;
+    font-weight: bold;
+    /*line-height: 3*/
+    cursor: pointer;
+}
+
+.blue label {
+    background: #2980b9;
+}
+
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+}
+
+#SKEditorContent .tab-content {
+    max-height: 100%;
+}
+
+.blue .tab-content {
+    background: #3498db;
+}
+
+.tab-content p {
+    margin: 1em;
+}
+
+/* :checked - was originally 100vh but this doesn't let large accordions display*/
+.tab input:checked~.tab-content {
+    max-height: 1000vh;
+}
+
+/* Icon */
+.tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 4em;
+    height: 4em;
+    line-height: 4;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+
+.tab input[type=checkbox]+label::after {
+    content: "+";
+}
+
+.tab input[type=radio]+label::after {
+    content: "\25BC";
+}
+
+.tab input[type=checkbox]:checked+label::after {
+    transform: rotate(315deg);
+}
+
+.tab input[type=radio]:checked+label::after {
+    transform: rotateX(180deg);
+}
+
+.tab-content>p {
+    color: black;
+}
+
+.tab-content>img {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.copy-footer {
+    padding-top: 5em;
+}
+
+.tab-content {
+    color: black;
+}

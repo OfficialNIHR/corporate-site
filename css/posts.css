@@ -1,0 +1,436 @@
+#contents h2 a,
+#contents h3 a,
+#contents h4 a {
+    cursor: default;
+    text-decoration: underline;
+}
+
+h2 a {
+    font-size: 1.4rem;
+}
+
+h3 a {
+    font-size: 1.2rem;
+}
+
+h4 a {
+    font-size: 1.1rem;
+}
+
+.larger-post-title {
+    font-size: 2rem;
+}
+
+#contents h2 .post-heading-white {
+    color: white;
+}
+
+#contents .rounded-header-margin-top-1 {
+    margin-top: 1rem;
+}
+
+.ctext h3 a {
+    font-size: inherit;
+}
+
+.SKPostFacettedSearchSubmit {
+    margin-left: 3rem !important;
+}
+
+/* Hides facets without any entries  */
+
+.SKPostFacettedSearch0 {
+    /*display: none; */
+    color: grey !important;
+}
+
+
+
+/* Bottom pagination styling  */
+
+.no-bullets li {
+    display: inline-block;
+    float: left;
+    padding-right: 1rem;
+}
+
+.no-bullets li a {
+    font-size: 1.2rem;
+}
+
+/* Fix for Sitekit defaults */
+
+.sknoindex {
+    padding: 0;
+    margin-top: 0;
+}
+
+/* list page tags  */
+
+.list-tags {
+    display: inline-block;
+    border: 2px solid #0d3d75;
+    border-radius: 25px;
+    padding: 0.5em;
+    font-weight: bold;
+    margin: 1rem 1rem 1rem 0;
+    cursor: pointer;
+}
+
+.list-tags a {
+    color: black;
+    text-decoration: none;
+}
+
+/*accomodating long titles in news items*/
+
+/*.col-12 {
+  width: 75% !important;
+}*/
+
+/*icon css*/
+.icon {
+    padding: 0 1rem 0 0;
+}
+
+.icon a {
+    color: white;
+}
+
+.super-text {
+    padding-right: 1rem;
+}
+
+/*clear fix */
+.relative-bottom {
+    clear: both;
+}
+
+/*posts-underline*/
+.posts-underline {
+    border-bottom: 2px solid #0d3d75;
+}
+
+.html-document-text p {
+    font-size: 1rem;
+}
+
+/* Rounded headers */
+.rounded-header a {
+    font-size: 1.3rem;
+}
+
+.style4 .rounded-header a {
+    width: 62%;
+}
+
+/* Document spacing */
+.document-summary-contents {
+    padding-left: 2.25em;
+}
+
+/* White heading block colors */
+
+.black-h1 {
+    color: black;
+}
+
+/*table of contents */
+
+#toc {
+    width: 34%;
+    float: right;
+    margin-right: 1.5rem;
+}
+
+#contents {
+    width: 62%;
+    float: left;
+    margin-bottom: 4rem;
+}
+
+#toc ol {
+    padding-left: 1rem;
+}
+
+#toc ol ol {
+    padding-left: 40px;
+}
+
+#toc ol ol li {
+    padding-bottom: 0.5rem;
+}
+
+/*back to top button */
+
+/* Back to top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 3%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #193e72;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    padding-bottom: 8px;
+    border-radius: 135px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+[class^=arr-] {
+    border: solid currentColor;
+    border-width: 0 .5em .5em 0;
+    display: inline-block;
+    padding: .50em;
+}
+
+.arr-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+/*vertical block */
+
+.vertical-latest-text h3 a {
+    font-size: 1.1rem;
+}
+
+.news-blog-hero {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+/*side bars */
+.rounded-header-rhs-two {
+    border-right: none;
+    border-top-left-radius: 135px;
+    border-bottom-left-radius: 135px;
+    margin-left: 0;
+}
+
+/*Calendar */
+
+.SKCalendar,
+.calendar-key {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+
+.calendar-key {
+    font-size: 0.9em;
+    margin-top: 2rem;
+}
+
+.calendar-key span.National,
+.calendar-key span.Local,
+.calendar-key span.Funding {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.calendar-key>span:first-child span {
+    margin-left: 0;
+}
+
+.calendar-key span.National {
+    background: #76b0a4;
+}
+
+.calendar-key span.Funding {
+    background: #7785b1;
+}
+
+.calendar-key span.Local {
+    background: #aa76b0;
+}
+
+.calendar-key-label {
+    font-size: 1.1rem;
+}
+
+.Funding {
+    border: 1px solid #2EA9BO !important;
+    background-color: #2EA9B0 !important;
+}
+
+.National {
+    border: 1px solid #193E72 !important;
+    background-color: #193E72 !important;
+}
+
+.Local {
+    border: 1px solid #EA5D4E !important;
+    background-color: #EA5D4E !important;
+}
+
+/* Vacancy Summary block */
+
+.vacancy-summary-information {
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Stuff */
+
+.facet-indent-text {
+    margin-left: 4rem;
+}
+
+.side-text-override {
+    display: contents !important;
+}
+
+.funding-text p {
+    padding-right: 1rem;
+}
+
+.funding-header {
+    font-size: 1.3rem;
+}
+
+.style3 .row .rounded-header-themed-call {
+    background: #EA5D4E;
+}
+
+.rounded-header-themed-call:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.2em;
+    margin: 0 0.25em 0 0;
+    content: "\f06a";
+}
+
+.icon.content-box.inline-block.float-left.funding-header {
+    text-decoration: inherit;
+}
+
+/* Case Studies */
+
+.case-study-parallax {
+    width: 100%;
+    min-height: 60vh;
+    max-height: 100%;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.row.content .width-100 .case-study-callout,
+.case-study-callout {
+    padding: 1rem 2rem 2rem 2rem;
+    background: #9BCBD0;
+}
+
+.case-study-head {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.case-study-item {
+    background: #2EA9B0;
+}
+
+.case-study-author-image h3 {
+    text-align: center;
+}
+
+.case-study-author {
+    padding-bottom: 1rem;
+}
+
+.case-study-author-image img {
+    border-radius: 100%;
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.case-study-70 {
+    width: 70%;
+}
+
+.case-study-30 {
+    width: 30%;
+}
+
+.case-study-100 {
+    width: 100%;
+}
+
+.case-study-call-out {
+    padding: 1rem 1rem 2rem 2rem;
+}
+
+.case-study-call-out p {
+    padding-bottom: 1rem;
+}
+
+.case-study-head h3 {
+    color: black;
+}
+
+/* News block */
+
+.html-document-body-contents .width-100 .row .news-block:nth-child(1) {
+    margin-left: 0 !important;
+}
+
+.html-document-body-contents .width-100 .row .news-block:nth-child(3) {
+    margin-right: 0 !important;
+}
+
+.row .news-block-style1 {
+    background: #2EA9B0;
+}
+
+/* Print Stylesheet */
+
+@media print {
+
+    .beta-bar,
+    .nav-wrapper,
+    .flex.col-4.col-10-sm.search,
+    .breadcrumb,
+    #toc {
+        display: none;
+    }
+
+    #contents {
+        width: 100% !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        color: black !important;
+    }

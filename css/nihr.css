@@ -1,0 +1,16 @@
+@import url("/layout/css/main.css?v=1.0");
+@import url("/layout/css/icons.css?v=1.0");
+@import url("/layout/css/posts.css?v=1.1");
+@import url("/layout/css/showcase.css?v=1.0");
+@import url("/layout/css/accordion.css?v=1.0");
+@import url("/layout/css/grid.css?v=1.0");
+
+.accordion-body-tab {
+    background-color: #193E72 !important;
+}
+
+/* White */
+
+.accordion-body-tab h2 {
+    color: white !important;
+}

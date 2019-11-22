@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("/layout/css/main.css?v=1.0");
+@import url("/layout/css/icons.css?v=1.0");
+@import url("/layout/css/posts.css?v=1.1");
+@import url("/layout/css/showcase.css?v=1.0");
+@import url("/layout/css/accordion.css");
+@import url("/layout/css/grid.css?v=1.0");
+
+h1 {
+    color: black;
+}
+
+/* Full Colour */
+
+.motif-block,
+.accordion-body-tab {
+    background-color: #F29330 !important;
+}
+
+.grid-title {
+    background: #F29330 !important;
+}
+
+/* 60% Colour */
+
+.content-header,
+.latest-block,
+.rounded-header,
+.internalLink:hover+.internalSummary,
+tr:first-child,
+.readmore-text {
+    background-color: #F9C187 !important;
+}
+
+/* 20% Colour */
+
+blockquote:before {
+    color: #FDEBD8 !important;
+}
+
+/* Black */
+
+h1,
+.breadcrumb,
+.breadcrumb a,
+.rounded-header,
+.icon i,
+.row .rounded-header a,
+.motif-block h3,
+.motif-block h3:before,
+.motif-block li a,
+.latest-block i,
+.latest-block li a,
+.footer h5,
+.progress-header h2,
+.grid-title h3 a,
+.internalLink:hover+.internalSummary,
+tr:first-child,
+.inline-fix,
+.readmore-text span::before {
+    color: black !important;
+}
+
+/* White */
+
+h2.large-text,
+.accordion-body-tab h2 {
+    color: white !important;
+}
+
+/* Grey */
+
+.rounded-header-future {
+    background: #ACBCC3 !important;
+}
+
+/* NIHR Blue */
+
+.intro-block h2,
+.intro-block h3,
+.intro-block h4 {
+    color: #193E72 !important;
+}
+
+@media only screen and (min-width: 45em) {
+    /* 720px */
+
+    .content-header {
+        background: url("/layout/img/motifs/ppi/ppi-header.png") bottom right no-repeat #F9C187 !important;
+        background-size: contain !important;
+        min-height: 13.5em !important;
+    }
+
+    .motif-block:before {
+        background: url("/layout/img/motifs/ppi/ppi-landing.png") no-repeat !important;
+        background-position: top left !important;
+        background-size: contain !important;
+    }
+}

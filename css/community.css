@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("/layout/css/main.css?v=1.0");
+@import url("/layout/css/icons.css?v=1.0");
+@import url("/layout/css/posts.css?v=1.0");
+@import url("/layout/css/showcase.css?v=1.0");
+@import url("/layout/css/accordion.css?v=1.0");
+
+h1 {
+    color: black;
+}
+
+/* Full Colour */
+
+.motif-block,
+.accordion-body-tab {
+    background-color: #2EA9B0 !important;
+}
+
+/* 60% Colour */
+
+.content-header,
+.latest-block,
+.rounded-header,
+.internalLink:hover+.internalSummary,
+tr:first-child {
+    background-color: #9BC8D0 !important;
+}
+
+/* 20% Colour */
+
+blockquote:before {
+    color: #E1EEF0 !important;
+}
+
+/* Black */
+
+h1,
+.breadcrumb,
+.breadcrumb a,
+.rounded-header,
+.icon i,
+.row .rounded-header a,
+.motif-block h3,
+.motif-block h3:before,
+.motif-block li a,
+.latest-block i,
+.latest-block li a,
+.footer h5,
+.progress-header h2,
+.accordion-body-tab h2,
+.internalLink:hover+.internalSummary,
+tr:first-child {
+    color: black !important;
+}
+
+/* White */
+
+h2.large-text {
+    color: white !important;
+}
+
+/* Grey */
+
+.rounded-header-future {
+    background: #ACBCC3 !important;
+}
+
+/* NIHR Blue */
+
+.intro-block h2,
+.intro-block h3,
+.intro-block h4 {
+    color: #193E72 !important;
+}
+
+/* NIHR Coral */
+
+.row .rounded-header-themed-call {
+    background: #EA5D4E !important;
+}
+
+@media only screen and (min-width: 45em) {
+    /* 720px */
+
+    .content-header {
+        background: url("/layout/img/motifs/community/community-header.png") bottom right no-repeat #9BC8D0 !important;
+        background-size: contain !important;
+        min-height: 13.5em !important;
+    }
+
+    .motif-block:before {
+        background: url("/layout/img/motifs/community/community-landing.png") no-repeat !important;
+        background-position: top left !important;
+        background-size: contain !important;
+    }
+
+}

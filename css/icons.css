@@ -1,0 +1,116 @@
+/*Icons*/
+
+.calendar-icon,
+.location-icon,
+.time-icon,
+.email-icon,
+.telephone-icon,
+.open-icon,
+.close-icon,
+.interview-icon,
+.money-icon {
+    margin-top: 1rem;
+    display: inline-block;
+    width: 2rem;
+}
+
+.calendar-icon:before,
+.location-icon:before,
+.time-icon:before,
+.email-icon:before,
+.telephone-icon:before,
+.open-icon:before,
+.close-icon:before,
+.interview-icon:before,
+.money-icon:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.2em;
+    margin: 0 0.25em 0 0;
+    color: #193e72;
+}
+
+.calendar-icon:before {
+    content: "\f274";
+}
+
+.location-icon:before {
+    content: "\f3c5";
+}
+
+.time-icon:before {
+    content: "\f017";
+}
+
+.email-icon:before {
+    content: "\f1fa";
+}
+
+.telephone-icon:before {
+    content: "\f095";
+}
+
+.open-icon:before {
+    content: "\f52b";
+}
+
+.close-icon:before {
+    content: "\f52a";
+}
+
+.interview-icon:before {
+    content: "\f4fc";
+}
+
+.money-icon:before {
+    content: "\f154";
+}
+
+/* To sort */
+
+.latest-block .news-items ul li:before,
+.style1 .latest-block .news-items ul li:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5em;
+    margin: 0;
+    position: absolute;
+    left: 0;
+}
+
+.latest-block .news-items ul li.globe:before,
+.news-block span.globe:before {
+    content: "\f7a2";
+}
+
+.latest-block .news-items ul li.pound:before,
+.news-block span.pound:before {
+    content: "\f154";
+}
+
+.latest-block .news-items ul li.event:before,
+.news-block span.event:before {
+    content: "\f274";
+    font-weight: 400;
+}
+
+.latest-block .news-items ul li.computer:before,
+.news-block span.computer:before {
+    content: "\f109";
+}
+
+.latest-block .news-items ul li.comment:before,
+.news-block span.comment:before {
+    content: "\f075";
+    font-weight: 400;
+}
+
+.latest-block .news-items ul li.case-study:before,
+.news-block span.case-study:before {
+    content: "\f007";
+    font-weight: 400;
+}
+
+.readmore-text .globe:before {
+    color: white;
+}

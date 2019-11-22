@@ -1,0 +1,98 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<div class="container style1 main-content">
+    <div class="row content-header">
+
+        :::block-search-box:::
+
+
+        <div class="row section-header">
+            <div class="col-12 mb1">
+                <div>
+                    <h1>:::title:::</h1>
+                    <ul class="breadcrumb">
+                        <BREADCRUMB>
+                            <CLASSNAME>breadcrumb sknoindex</CLASSNAME>
+                            <DELIMITER>></DELIMITER>
+                            <NAVDEPTH>6</NAVDEPTH>
+                        </BREADCRUMB>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row content">
+        <sitekit:if op1=":::thispageinfo.bodylength1:::" operator="!=" op2="0">
+            <div class="col-8">
+                <div class="main-content-container">
+                    <div class="img-fluid" data-aos="fade-up">
+                        <COMMENT>BODY1</COMMENT>
+                    </div>
+                    <div class="img-fluid" data-aos="fade-up">
+                        <COMMENT>BODY2</COMMENT>
+                    </div>
+                    <div class="img-fluid" data-aos="fade-up">
+                        <COMMENT>BODY3</COMMENT>
+                    </div>
+                    <div class="img-fluid" data-aos="fade-up">
+                        <COMMENT>BODY4</COMMENT>
+                    </div>
+                    <div class="img-fluid" data-aos="fade-up">
+                        <COMMENT>BODY5</COMMENT>
+                    </div>
+                </div>
+            </div>
+        </sitekit:if>
+
+
+        <div class="col-4 rhs-nav full-width-latest-block">
+            <sitekit:if op1="1" operator="in" op2=":::thispageinfo.hasinternallinks:::">
+                <div data-aos="fade-left">
+                    <h2 class="rounded-header rounded-header-style1 rounded-header-rhs width100">Related pages</h2>
+                    <COMMENT>INTERNAL</COMMENT>
+                </div>
+            </sitekit:if>
+
+            <sitekit:if op1=":::thispageinfo.bodylength7:::" operator="!=" op2="0">
+                <div data-aos="fade-left">
+                    <h2 class="rounded-header rounded-header-style1 rounded-header-rhs width100">Documents</h2>
+                    <COMMENT>BODY7</COMMENT>
+                </div>
+            </sitekit:if>
+
+            <sitekit:if op1=":::thispageinfo.bodylength8:::" operator="!=" op2="0">
+                <div data-aos="fade-left">
+                    <h2 class="rounded-header rounded-header-style1 rounded-header-rhs width100">External links</h2>
+                    <COMMENT>BODY8</COMMENT>
+                </div>
+            </sitekit:if>
+
+            <sitekit:if
+                op1=":::thispageinfo.hasinternallinks:::|:::thispageinfo.bodylength7:::|:::thispageinfo.bodylength8:::"
+                operator="=" op2="0">
+                <h2 class="rounded-header rounded-header-style1 rounded-header-rhs width100" data-aos="fade-left">NIHR
+                    blog</h2>
+                :::dataisland-vertical-related-blogs:::
+            </sitekit:if>
+
+        </div>
+    </div>
+
+    <ADMINCOMMENT>
+        <h3>Developer note: The text block below is full-width, designed for wide content and for inserting dynamic code
+            blocks.</h3>
+    </ADMINCOMMENT>
+    <div class="row img-fluid" data-aos="fade-up">
+        <COMMENT>BODY6</COMMENT>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/layout/js/div-height.js"></script>
+
+</div>
