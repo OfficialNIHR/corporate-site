@@ -201,6 +201,11 @@
              <xsl:if test="Status = 'Open'">
              <a class="btn" id="funding-apply" href="{apply-link}">Apply Now</a>
              </xsl:if>
+              <xsl:if test="webinar-text != ''">
+               <div class="mt2">
+                 <xsl:value-of select="webinar-text" disable-output-escaping="yes"/>
+               </div>
+             </xsl:if>
            </div>
            </div>
       </div>

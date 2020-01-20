@@ -1424,6 +1424,69 @@ em::selection,
     margin-bottom: 0.5em;
 }
 
+
+/*---News header zoom fix----*/
+
+@media only screen and (min-width: 65rem) {
+    /* 720px */
+
+    .document-news .content-header {
+        min-height: 13.5rem;
+    }
+
+    .document-news .section-header h1 {
+        width: 70%;
+    }
+
+    .document-news .content-header {
+        min-height: 17rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 65rem) {
+
+    .document-news .section-header h1 {
+        width: 62%;
+    }
+
+    .document-news .content-header {
+        min-height: 18rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 40rem) {
+
+    .document-news .section-header h1 {
+        width: 100%;
+    }
+
+    .document-news .content-header {
+        min-height: 16.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 30rem) {
+
+    .document-news .section-header h1 {
+        width: 100%;
+
+    }
+
+    .document-news .content-header {
+        min-height: 19rem;
+    }
+
+}
+
+/*---End News header zoom fix----*/
+
+
+
 /* Breadcrumb */
 
 .breadcrumb {
@@ -1562,7 +1625,7 @@ em::selection,
    ================================================================= */
 
 .btn {
-    border: 1px solid #fa453c;
+    border: 1px solid #EA5D4E;
     border-radius: 100px;
     cursor: pointer;
     padding: 0.3em 1em;
@@ -1573,17 +1636,26 @@ em::selection,
     margin-bottom: 1rem;
 }
 
+/* text colour set to black to meet AA accessibility contrast ratio */
 .btn:hover,
 .btn:hover a {
-    color: #fff;
-    background-color: #fa453c;
+    color: #000;
+    background-color: #EA5D4E;
 }
 
+/*For buttons within the btn class div */
 .btn a {
     color: #193E72;
     font-size: 1.2rem;
     font-weight: 800;
     background-color: #FFF;
+}
+
+/*for links with the class btn */
+
+a.btn {
+    display: inline-block;
+    margin-right: 1rem;
 }
 
 .button-group {
@@ -1626,11 +1698,11 @@ em::selection,
     outline: none;
     border: 0;
     font-size: 1.2rem;
-    color: #9eb3ba;
+    color: #193e72;
 }
 
 .search input::placeholder {
-    color: #9eb3ba;
+    color: #193e72;
 }
 
 .search input:focus::-webkit-input-placeholder {
@@ -1638,11 +1710,33 @@ em::selection,
 }
 
 .search .fa-search {
-    color: #9eb3ba;
+    color: #193e72;
     margin-right: 0.5em;
     font-size: 1.3em;
     line-height: 1.3em;
 }
+
+.search input::placeholder {
+    color: #193e72;
+}
+
+/*---- input colour browser fix  -----*/
+
+.search input::-webkit-input-placeholder {
+    color: #193e72;
+}
+
+.search input::-moz-placeholder {
+    color: #193e72;
+    opacity: 1;
+}
+
+.search input:-ms-input-placeholder {
+    color: #193e72;
+}
+
+/*---- End -----*/
+
 
 @media only screen and (min-width: 45em) {
 
@@ -2532,6 +2626,17 @@ blockquote:before {
 
 .showcase-tab-box blockquote p {
     margin-bottom: 0;
+}
+
+/* Blockquote at high zoom fix */
+@media only screen and (max-width: 75em) {
+
+    blockquote,
+    blockquote p,
+    blockquote abbr,
+    blockquote a {
+        font-size: 1.2rem !important;
+    }
 }
 
 /* Tables */

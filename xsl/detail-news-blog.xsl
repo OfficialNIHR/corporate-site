@@ -21,6 +21,8 @@
           <article>
               
               <div class="container style3">
+                
+                <div class="document-news">
                   <div class="row content-header headerstyle1">
 
                      :::block-search-box:::
@@ -46,7 +48,8 @@
                       </div>
                     </div>
                   </div>
-
+ 				</div>
+                
                     <xsl:apply-templates select="Post" mode="Tags"/>
             
                 <div class="html-document-body-contents position-relative">

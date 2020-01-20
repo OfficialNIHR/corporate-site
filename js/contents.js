@@ -36,8 +36,8 @@ window.onload = function () {
                 toc += "<li><a href=\"#" + anchor + "\">" + titleText +
                     "</a></li>";
 
-                return "<h" + openLevel + "><a name=\"" + anchor + "\">" +
-                    titleText + "</a></h" + closeLevel + ">";
+                return "<div tabindex='1' id='" + anchor + "'>" + "<h" + openLevel + "><a name=\"" + anchor + "\">" +
+                    titleText + "</a></h" + closeLevel + ">" + "</div>";
             }
         );
 
