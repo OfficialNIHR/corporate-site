@@ -88,7 +88,7 @@
            <xsl:value-of select="Body" disable-output-escaping="yes"/>
          </div>
       </div>
-      <button onclick="topFunction()" id="myBtn"><i class="arr-up"></i></button>
+      <button onclick="topFunction()" id="myBtn" aria-label="Back to top"><i class="arr-up"></i></button>
       <script src="/layout/js/back-to-top.js"></script>
     </xsl:template>
   </xsl:stylesheet>
