@@ -1863,7 +1863,7 @@ a.btn {
     width: 100%;
 }
 
-/*@media only screen and (min-width: 45em) { 
+/*@media only screen and (min-width: 45em) {
   .img-article {
     display: flex;
   }
@@ -1890,7 +1890,6 @@ a.btn {
 }
 
 .img-article .ctext {}
-}
 
 
 /* =================================================================
@@ -2649,7 +2648,6 @@ tr:nth-child(even) {
     background-color: white;
 }
 
-tr:first-child,
 th {
     background: #193E72;
     color: white;

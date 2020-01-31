@@ -222,7 +222,7 @@ window.searchResultsPage = {
         $("#search-results").append(html);
         $('.showcase:gt(0)').wrap('<div class="tab-content aos-init aos-animate" data-aos="fade-up"></div>');
         $('.tab-content').wrapAll('<div class="tab" data-aos="fade-up"></div>');
-        $('.tab').prepend('<input id="tab-1" name="tabs" type="checkbox" /><label for="tab-1" class="accordion-body-tab"><h3 class="btn">More NIHR services...</h3></label>');
+        $('.tab').prepend('<input id="tab-1" name="tabs" type="checkbox" aria-checked="false" /><label for="tab-1" class="accordion-body-tab"><h3 class="btn">More NIHR services...</h3></label>');
         $('.result-row').not('.showcase').first().prepend('<h2 class="mb1 mt1 search-heading">Your results</h2>');
         $('.showcase').first().before('<h2 class="mt1">NIHR services</h2><p>The NIHR offers the funding, people, facilities, and technology that you need. Explore NIHR to find out how we can help you.</p>');
 
@@ -359,7 +359,7 @@ window.searchResultsPage = {
         // Handle the Previous
         if (currPage > 1) {
             var previousPage = currPage - 1;
-            html += '<a onclick="searchResultsPage.displayPage(\'' + previousPage + '\');return false;";>&laquo;</a>';
+            html += '<a aria-label="previous-page" onclick="searchResultsPage.displayPage(\'' + previousPage + '\');return false;";>&laquo;</a>';
         }
 
         if (currPage <= 4) {
@@ -368,23 +368,23 @@ window.searchResultsPage = {
                 var pageHtmlStr = i;
                 if (i == currPage) {
                     // Current page is Strong format
-                    html += '<a href="#" class="active">' + i + '</a>';
+                    html += '<a href="#" aria-label="current-page" class="active">' + i + '</a>';
                 } else {
-                    html += '<a href="#" onclick="searchResultsPage.displayPage(\'' + i + '\');return false;";>' + i + '</a>';
+                    html += '<a href="#" aria-label="page-' + i + '" onclick="searchResultsPage.displayPage(\'' + i + '\');return false;";>' + i + '</a>';
                 }
             }
         } else {
-            html += '<a href="#" onclick="searchResultsPage.displayPage(\'' + 1 + '\');return false;";>1</a>';
-            html += '<a href="#" onclick="searchResultsPage.displayPage(\'' + (currPage - 1) + '\');return false;";>' + (currPage - 1) + '</a>';
-            html += '<a href="#" class="active">' + currPage + '</a>';
+            html += '<a href="#" aria-label="first-page" onclick="searchResultsPage.displayPage(\'' + 1 + '\');return false;";>1</a>';
+            html += '<a href="#" aria-label="page-' + (currPage - 1) + '" onclick="searchResultsPage.displayPage(\'' + (currPage - 1) + '\');return false;";>' + (currPage - 1) + '</a>';
+            html += '<a href="#" aria-label="current-page" class="active">' + currPage + '</a>';
             if (currPage < totPages) {
-                html += '<a href="#" onclick="searchResultsPage.displayPage(\'' + (currPage + 1) + '\');return false;";>' + (currPage + 1) + '</a>';
+                html += '<a href="#" aria-label="page-' + (currPage + 1) + '" onclick="searchResultsPage.displayPage(\'' + (currPage + 1) + '\');return false;";>' + (currPage + 1) + '</a>';
             }
         }
 
         if (currPage < totPages) {
             var nextPage = currPage + 1;
-            html += '<a onclick="searchResultsPage.displayPage(\'' + nextPage + '\');return false;";>&raquo;</a>';
+            html += '<a aria-label="next-page" onclick="searchResultsPage.displayPage(\'' + nextPage + '\');return false;";>&raquo;</a>';
         }
 
         html += '</div>';
