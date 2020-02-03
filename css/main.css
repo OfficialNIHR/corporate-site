@@ -257,7 +257,7 @@
     }
 
     .row .col-10-sm {
-        width: 94%;
+        width: 35%;
     }
 
     .button-group {
@@ -1458,10 +1458,10 @@ em::selection,
 }
 
 
-@media only screen and (max-width: 40rem) {
+@media only screen and (max-width: 45rem) {
 
     .document-news .section-header h1 {
-        width: 100%;
+        width: 98%;
     }
 
     .document-news .content-header {
@@ -1478,14 +1478,44 @@ em::selection,
     }
 
     .document-news .content-header {
-        min-height: 19rem;
+        min-height: 20rem;
     }
 
 }
 
 /*---End News header zoom fix----*/
 
+/*---Search bar header zoom fix----*/
 
+@media only screen and (min-width: 65rem) {  /* 720px */ 
+    .row .col-10-sm {
+     width: 35%;
+     }
+  }
+  
+  @media only screen and (max-width: 65rem) {
+     .row .col-10-sm {
+      width: 40%;
+      }
+    
+    .search {
+      position: absolute;
+      top: 3em;
+      border-radius: 0 100px 100px 0;
+      border-left: none;
+      margin: 0;
+      }
+  }
+  
+  @media only screen and (max-width: 45rem) {
+    .row .col-10-sm {
+      width: 90%;
+    }
+    
+  }
+  
+  /*---End Search bar header zoom fix----*/
+  
 
 /* Breadcrumb */
 
@@ -2001,7 +2031,7 @@ a.btn {
     left: 0;
     background: white;
     border-radius: 40px;
-    color: #21abb0;
+    color: #000000;
     width: 40px;
     height: 40px;
     line-height: 40px;
