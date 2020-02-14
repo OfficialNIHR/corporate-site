@@ -5,23 +5,12 @@
     <xsl:param name="qs_rows" />
     <xsl:param name="qs_postcategory" />
 
- <xsl:template match="Posts">
-     <div class="container style3">
-    <div class="row content-header headerstyle1">
-          
-      :::block-search-box:::
-
-      <div class="row section-header">
-        <div class="col-12 mb1">
-          <div>
-            <h1>:::title:::</h1>
-            <ul class="breadcrumb">
-            <BREADCRUMB><CLASSNAME>breadcrumb sknoindex</CLASSNAME><DELIMITER>></DELIMITER><NAVDEPTH>6</NAVDEPTH></BREADCRUMB>
-            </ul>
-          </div>
-        </div>
+  <xsl:template match="Posts">
+    <div class="container style3">
+      <div class="row content-header headerstyle1">
+        :::block-search-box:::
+        :::block-title-with-breadcrumb:::
       </div>
-    </div>
 
     <div class="row content">
       <div class="col-8">

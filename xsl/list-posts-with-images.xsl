@@ -8,19 +8,8 @@
  <xsl:template match="Posts">
      <div class="container style3">
     <div class="row content-header headerstyle1">
-          
-       :::block-search-box:::
-
-      <div class="row section-header">
-        <div class="col-12 mb1">
-          <div>
-            <h1>:::title:::</h1>
-            <ul class="breadcrumb">
-                  <a href=":::assetfullpath.shortcutid-756604:::">About Us</a> > <a href=":::assetfullpath.shortcutid-754744:::">News</a>
-            </ul>
-          </div>
-        </div>
-      </div>
+      :::block-search-box:::
+      :::block-title-with-breadcrumb:::
     </div>
 
     <div class="row content">
