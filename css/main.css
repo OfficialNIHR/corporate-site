@@ -1851,7 +1851,7 @@ a.btn {
 }
 
 #sk-cookies .buttons a:hover {
-    color: #fff !important;
+    color: #000 !important;
     background-color: #fa453c !important;
 }
 
@@ -2522,7 +2522,7 @@ abbr[title] {
 #tab1:checked+label {
     border: 2px solid #fa453c;
     background: #fa453c;
-    color: white;
+    color: #000;
 }
 
 .tabset>label:hover::after,
